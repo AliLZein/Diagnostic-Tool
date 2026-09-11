@@ -1,0 +1,1 @@
+Simulated scenario: an unexpected service came online around the same time an application error occurred. The toolkit flagged the new port and correlated it with the error automatically, without a human needing to cross-reference two separate log sources.
