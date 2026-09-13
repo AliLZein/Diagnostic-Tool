@@ -17,6 +17,12 @@
       "protocol": "tcp",
       "state": "open",
       "service": "microsoft-ds"
+    },
+    {
+      "port": 5000,
+      "protocol": "tcp",
+      "state": "open",
+      "service": "upnp"
     }
   ]
 }
