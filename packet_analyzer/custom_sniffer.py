@@ -1,12 +1,3 @@
-"""
-packet_analyzer/custom_sniffer.py
-
-A pure-Python packet sniffer using Windows' built-in raw socket support --
-replaces Wireshark/tshark/pyshark AND their Npcap driver dependency entirely.
-
-Includes: Unusual ports detection and diagnostic visibility counters.
-"""
-
 import socket
 import struct
 import time
@@ -14,10 +5,8 @@ import sys
 import logging
 from storage.db import log_finding
 
-# Tracks (src_ip, src_port, dst_ip, dst_port, seq) we've already seen,
-# so a repeated sequence number on the same flow = a retransmission.
 _seen_segments = {}
-_SEGMENT_TTL = 30  # seconds
+_SEGMENT_TTL = 30 
 
 COMMON_PORTS = {80, 443, 53, 22, 21, 25, 3389}
 
@@ -62,13 +51,13 @@ def _parse_tcp_header(data, offset):
 
 def _extract_sni(payload):
     try:
-        if len(payload) < 5 or payload[0] != 0x16:  # 0x16 = TLS Handshake
+        if len(payload) < 5 or payload[0] != 0x16: 
             return None
         pos = 5
-        if payload[pos] != 0x01:  # 0x01 = ClientHello
+        if payload[pos] != 0x01:
             return None
         pos += 4
-        pos += 2 + 32  # client version (2) + random (32)
+        pos += 2 + 32 
         session_id_len = payload[pos]
         pos += 1 + session_id_len
         cipher_suites_len = struct.unpack("!H", payload[pos:pos + 2])[0]
@@ -105,10 +94,6 @@ def _extract_http_host(payload):
 
 
 def sniff_traffic(local_ip, duration=5):
-    """
-    Captures traffic on `local_ip` for `duration` seconds using Windows raw sockets.
-    Tracks retransmissions, unusual ports, and logs raw packet visibility counters.
-    """
     if sys.platform != "win32":
         log_finding("network", "warning", "sniffer", "Custom sniffer currently only supports Windows raw sockets")
         return
@@ -117,7 +102,7 @@ def sniff_traffic(local_ip, duration=5):
     sock.bind((local_ip, 0))
     sock.setsockopt(socket.IPPROTO_IP, socket.IP_HDRINCL, 1)
     sock.ioctl(socket.SIO_RCVALL, socket.RCVALL_ON)
-    sock.settimeout(1.0)  # check elapsed time periodically
+    sock.settimeout(1.0) 
 
     retransmission_count = 0
     total_packets_seen = 0
@@ -135,7 +120,7 @@ def sniff_traffic(local_ip, duration=5):
                 continue
 
             ip_info = _parse_ip_header(raw_data)
-            if ip_info["protocol"] != 6:  # Only process TCP packets
+            if ip_info["protocol"] != 6:
                 continue
 
             tcp_info = _parse_tcp_header(raw_data, ip_info["ihl"])
@@ -144,7 +129,6 @@ def sniff_traffic(local_ip, duration=5):
 
             tcp_packets_seen += 1
 
-            # Check for non-standard ports above 1024
             dport = tcp_info["dst_port"]
             if dport not in COMMON_PORTS and dport > 1024:
                 unusual_ports.add(dport)
@@ -159,7 +143,6 @@ def sniff_traffic(local_ip, duration=5):
             else:
                 _seen_segments[flow_key] = time.time()
 
-            # Attempt extraction of target host info from payload
             payload_offset = ip_info["ihl"] + tcp_info["header_len"]
             payload = raw_data[payload_offset:]
             if payload:
@@ -180,7 +163,6 @@ def sniff_traffic(local_ip, duration=5):
     if unusual_ports:
         log_finding("security", "warning", local_ip, f"Unusual ports seen: {sorted(unusual_ports)}")
 
-    # Diagnostic visibility logging (replaces guessing with exact metrics)
     summary_msg = (
         f"Capture cycle ({duration}s): {retransmission_count} retransmissions | "
         f"Packets: {tcp_packets_seen} TCP / {total_packets_seen} Total | "
@@ -191,5 +173,4 @@ def sniff_traffic(local_ip, duration=5):
 
 
 if __name__ == "__main__":
-    # Replace with your real local IP obtained via `ipconfig`
     sniff_traffic("192.168.1.100", duration=10)
