@@ -994,23 +994,6 @@
    'C:\\Program Files\\Python313\\Lib\\multiprocessing\\util.py',
    'PYMODULE'),
   ('netrc', 'C:\\Program Files\\Python313\\Lib\\netrc.py', 'PYMODULE'),
-  ('network_scanner', '-', 'PYMODULE'),
-  ('network_scanner.custom_scanner',
-   'C:\\Users\\Ali\\Documents\\Root-Cause Diagnostic '
-   'Toolkit\\diagnostic-tool\\network_scanner\\custom_scanner.py',
-   'PYMODULE'),
-  ('network_scanner.scanner',
-   'C:\\Users\\Ali\\Documents\\Root-Cause Diagnostic '
-   'Toolkit\\diagnostic-tool\\network_scanner\\scanner.py',
-   'PYMODULE'),
-  ('nmap',
-   'C:\\Users\\Ali\\Documents\\Root-Cause Diagnostic '
-   'Toolkit\\diagnostic-tool\\venv\\Lib\\site-packages\\nmap\\__init__.py',
-   'PYMODULE'),
-  ('nmap.nmap',
-   'C:\\Users\\Ali\\Documents\\Root-Cause Diagnostic '
-   'Toolkit\\diagnostic-tool\\venv\\Lib\\site-packages\\nmap\\nmap.py',
-   'PYMODULE'),
   ('nturl2path',
    'C:\\Program Files\\Python313\\Lib\\nturl2path.py',
    'PYMODULE'),

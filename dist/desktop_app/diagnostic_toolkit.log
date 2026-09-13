@@ -1,386 +1,1355 @@
-2026-09-13 13:01:50,864 [INFO] App starting up...
-2026-09-13 13:01:51,193 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2026-09-13 17:02:19,759 [INFO] App starting up...
+2026-09-13 17:02:20,028 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2026-09-13 13:01:51,194 [INFO] [33mPress CTRL+C to quit[0m
-2026-09-13 13:01:53,073 [INFO] [INFO] network — port-scanner: No baseline found — saving current scan as baseline
-2026-09-13 13:01:53,082 [INFO] [INFO] network — Network-scan: Baseline saved with 1 host(s)
-2026-09-13 13:01:53,341 [INFO] 127.0.0.1 - - [13/Sep/2026 13:01:53] "GET / HTTP/1.1" 200 -
-2026-09-13 13:01:53,432 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:53,467 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:53,541 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:53,575 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:53,631 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:53,636 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:53,679 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:53,687 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:53,692 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:53,697 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:53,744 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:53,750 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:53,755 [INFO] 127.0.0.1 - - [13/Sep/2026 13:01:53] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:01:53,759 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:53,765 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:53,781 [INFO] 127.0.0.1 - - [13/Sep/2026 13:01:53] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:01:53,782 [INFO] 127.0.0.1 - - [13/Sep/2026 13:01:53] "GET /verdict HTTP/1.1" 200 -
-2026-09-13 13:01:53,835 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:53,841 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:53,878 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:53,896 [INFO] 127.0.0.1 - - [13/Sep/2026 13:01:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2026-09-13 13:01:53,896 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:53,909 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:54,076 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:54,276 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:54,281 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:54,287 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:54,293 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:54,309 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:54,665 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:54,671 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:54,752 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:54,753 [INFO] 127.0.0.1 - - [13/Sep/2026 13:01:54] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:01:54,758 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:54,763 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:54,768 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:54,982 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:54,988 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:54,995 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:55,000 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:55,005 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:55,035 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:55,356 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:55,487 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:55,492 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:55,722 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:55,727 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:55,752 [INFO] 127.0.0.1 - - [13/Sep/2026 13:01:55] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:01:56,751 [INFO] 127.0.0.1 - - [13/Sep/2026 13:01:56] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:01:56,752 [INFO] 127.0.0.1 - - [13/Sep/2026 13:01:56] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:01:56,931 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:01:57,752 [INFO] 127.0.0.1 - - [13/Sep/2026 13:01:57] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:01:58,355 [INFO] [INFO] network — 104.17.24.14: Identified traffic destination: cdnjs.cloudflare.com
-2026-09-13 13:01:58,360 [INFO] [INFO] network — 20.190.147.3: Identified traffic destination: login.live.com
-2026-09-13 13:01:58,365 [INFO] [INFO] network — 51.105.71.137: Identified traffic destination: mobile.events.data.microsoft.com
-2026-09-13 13:01:58,370 [INFO] [INFO] network — 52.98.163.34: Identified traffic destination: substrate.office.com
-2026-09-13 13:01:58,374 [INFO] [INFO] network — 52.123.243.20: Identified traffic destination: config.edge.skype.com
-2026-09-13 13:01:58,379 [INFO] [INFO] network — 35.186.224.22: Identified traffic destination: gae2-spclient.spotify.com
-2026-09-13 13:01:58,384 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [27020]
-2026-09-13 13:01:58,388 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 43 retransmissions | Packets: 114 TCP / 181 Total | Hosts: 6 | Unusual Ports: [27020]
-2026-09-13 13:01:58,388 [INFO] Capture cycle (5s): 43 retransmissions | Packets: 114 TCP / 181 Total | Hosts: 6 | Unusual Ports: [27020]
-2026-09-13 13:01:58,753 [INFO] 127.0.0.1 - - [13/Sep/2026 13:01:58] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:01:58,993 [INFO] 127.0.0.1 - - [13/Sep/2026 13:01:58] "POST /settings HTTP/1.1" 200 -
-2026-09-13 13:01:58,999 [INFO] 127.0.0.1 - - [13/Sep/2026 13:01:58] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:01:59,000 [INFO] 127.0.0.1 - - [13/Sep/2026 13:01:59] "GET /verdict HTTP/1.1" 200 -
-2026-09-13 13:01:59,722 [INFO] [INFO] network — port-scanner: Scan cycle complete — no changes from baseline
-2026-09-13 13:01:59,754 [INFO] 127.0.0.1 - - [13/Sep/2026 13:01:59] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:01:59,754 [INFO] 127.0.0.1 - - [13/Sep/2026 13:01:59] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:00,753 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:00] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:01,758 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:01] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:01,923 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:02,752 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:02] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:02,753 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:02] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:03,756 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:03] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:04,755 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:04] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:04,815 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [4070]
-2026-09-13 13:02:04,820 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 1 retransmissions | Packets: 6 TCP / 6 Total | Hosts: 0 | Unusual Ports: [4070]
-2026-09-13 13:02:04,820 [INFO] Capture cycle (5s): 1 retransmissions | Packets: 6 TCP / 6 Total | Hosts: 0 | Unusual Ports: [4070]
-2026-09-13 13:02:05,766 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:05] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:05,766 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:05] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:06,751 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:06] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:07,045 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:07,751 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:07] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:07,939 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:07,976 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:08,362 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:08,751 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:08] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:08,752 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:08] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:09,753 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:09] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:10,750 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:10] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:11,662 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 4 retransmissions | Packets: 12 TCP / 12 Total | Hosts: 0 | Unusual Ports: none
-2026-09-13 13:02:11,662 [INFO] Capture cycle (5s): 4 retransmissions | Packets: 12 TCP / 12 Total | Hosts: 0 | Unusual Ports: none
-2026-09-13 13:02:11,756 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:11] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:11,756 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:11] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:12,750 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:12] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:13,750 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:13] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:13,939 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:14,752 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:14] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:14,753 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:14] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:15,183 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:15,751 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:15] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:16,755 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:16] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:17,766 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:17] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:17,768 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:17] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:18,034 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 2 retransmissions | Packets: 5 TCP / 5 Total | Hosts: 0 | Unusual Ports: none
-2026-09-13 13:02:18,034 [INFO] Capture cycle (5s): 2 retransmissions | Packets: 5 TCP / 5 Total | Hosts: 0 | Unusual Ports: none
-2026-09-13 13:02:18,756 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:18] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:19,753 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:19] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:20,383 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:20,759 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:20] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:20,759 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:20] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:21,577 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:21,756 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:21] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:22,711 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:22,751 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:22] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:23,763 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:23] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:23,763 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:23] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:24,449 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [27020]
-2026-09-13 13:02:24,455 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 3 retransmissions | Packets: 12 TCP / 30 Total | Hosts: 0 | Unusual Ports: [27020]
-2026-09-13 13:02:24,455 [INFO] Capture cycle (5s): 3 retransmissions | Packets: 12 TCP / 30 Total | Hosts: 0 | Unusual Ports: [27020]
-2026-09-13 13:02:24,754 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:24] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:25,750 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:25] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:26,761 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:26] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:26,762 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:26] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:27,198 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:27,755 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:27] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:27,976 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:28,292 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:28,764 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:28] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:29,125 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:29,761 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:29] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:29,763 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:29] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:30,138 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:30,145 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:30,755 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:30] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:31,153 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 6 retransmissions | Packets: 22 TCP / 24 Total | Hosts: 0 | Unusual Ports: none
-2026-09-13 13:02:31,154 [INFO] Capture cycle (5s): 6 retransmissions | Packets: 22 TCP / 24 Total | Hosts: 0 | Unusual Ports: none
-2026-09-13 13:02:31,759 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:31] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:32,755 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:32] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:32,756 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:32] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:33,598 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:33,755 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:33] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:34,687 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:34,760 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:34] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:35,756 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:35] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:35,759 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:35] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:36,754 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:36] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:37,518 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 2 retransmissions | Packets: 6 TCP / 8 Total | Hosts: 0 | Unusual Ports: none
-2026-09-13 13:02:37,518 [INFO] Capture cycle (5s): 2 retransmissions | Packets: 6 TCP / 8 Total | Hosts: 0 | Unusual Ports: none
-2026-09-13 13:02:37,762 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:37] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:38,756 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:38] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:38,759 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:38] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:39,755 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:39] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:39,987 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:40,766 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:40] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:41,048 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:41,758 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:41] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:41,760 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:41] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:42,753 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:42] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:43,766 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:43] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:44,420 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 2 retransmissions | Packets: 12 TCP / 17 Total | Hosts: 0 | Unusual Ports: none
-2026-09-13 13:02:44,420 [INFO] Capture cycle (5s): 2 retransmissions | Packets: 12 TCP / 17 Total | Hosts: 0 | Unusual Ports: none
-2026-09-13 13:02:44,757 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:44] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:44,759 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:44] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:45,751 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:45] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:46,699 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:46,759 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:46] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:47,754 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:47] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:47,757 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:47] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:47,944 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:48,753 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:48] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:49,766 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:49] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:50,762 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:50] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:50,764 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:50] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:51,311 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [27020]
-2026-09-13 13:02:51,316 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 2 retransmissions | Packets: 7 TCP / 7 Total | Hosts: 0 | Unusual Ports: [27020]
-2026-09-13 13:02:51,316 [INFO] Capture cycle (5s): 2 retransmissions | Packets: 7 TCP / 7 Total | Hosts: 0 | Unusual Ports: [27020]
-2026-09-13 13:02:51,752 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:51] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:52,765 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:52] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:53,066 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:53,367 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:53,468 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:53,550 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:53,742 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:53,748 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:53,764 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:53] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:53,766 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:53] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:53,843 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:54,151 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:54,389 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:54,560 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:54,752 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:54] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:54,839 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:55,758 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:55] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:56,249 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:56,761 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:56] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:56,764 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:56] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:56,779 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:02:57,669 [INFO] [INFO] network — 23.36.15.132: Identified traffic destination: msedge.b.tlu.dl.delivery.mp.microsoft.com
-2026-09-13 13:02:57,674 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 13 retransmissions | Packets: 34 TCP / 43 Total | Hosts: 1 | Unusual Ports: none
-2026-09-13 13:02:57,674 [INFO] Capture cycle (5s): 13 retransmissions | Packets: 34 TCP / 43 Total | Hosts: 1 | Unusual Ports: none
-2026-09-13 13:02:57,752 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:57] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:58,751 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:58] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:59,752 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:59] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:02:59,752 [INFO] 127.0.0.1 - - [13/Sep/2026 13:02:59] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:02:59,957 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:00,751 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:00] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:01,203 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:01,765 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:01] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:02,447 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:02,752 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:02] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:02,753 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:02] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:03:03,751 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:03] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:04,135 [INFO] [INFO] network — 23.36.15.132: Identified traffic destination: msedge.b.tlu.dl.delivery.mp.microsoft.com
-2026-09-13 13:03:04,140 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [4070]
-2026-09-13 13:03:04,145 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 3 retransmissions | Packets: 8 TCP / 12 Total | Hosts: 1 | Unusual Ports: [4070]
-2026-09-13 13:03:04,145 [INFO] Capture cycle (5s): 3 retransmissions | Packets: 8 TCP / 12 Total | Hosts: 1 | Unusual Ports: [4070]
-2026-09-13 13:03:04,755 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:04] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:05,484 [INFO] [INFO] network — port-scanner: Scan cycle complete — no changes from baseline
-2026-09-13 13:03:05,759 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:05] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:03:05,764 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:05] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:06,682 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:06,753 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:06] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:06,862 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:07,672 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:07,761 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:07] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:08,755 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:08] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:08,760 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:08] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:03:09,088 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:09,758 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:09] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:09,780 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:10,753 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:10] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:10,797 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 5 retransmissions | Packets: 18 TCP / 27 Total | Hosts: 0 | Unusual Ports: none
-2026-09-13 13:03:10,797 [INFO] Capture cycle (5s): 5 retransmissions | Packets: 18 TCP / 27 Total | Hosts: 0 | Unusual Ports: none
-2026-09-13 13:03:11,758 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:11] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:11,759 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:11] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:03:12,752 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:12] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:13,222 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:13,273 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:13,388 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:13,627 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:13,759 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:13] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:14,324 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:14,757 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:14] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:14,758 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:14] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:03:14,845 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:15,757 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:15] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:16,762 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:16] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:17,292 [INFO] [INFO] network — 172.217.20.46: Identified traffic destination: accounts.youtube.com
-2026-09-13 13:03:17,297 [INFO] [INFO] network — 23.36.15.132: Identified traffic destination: msedge.b.tlu.dl.delivery.mp.microsoft.com
-2026-09-13 13:03:17,302 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [27020]
-2026-09-13 13:03:17,308 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 6 retransmissions | Packets: 25 TCP / 32 Total | Hosts: 2 | Unusual Ports: [27020]
-2026-09-13 13:03:17,308 [INFO] Capture cycle (5s): 6 retransmissions | Packets: 25 TCP / 32 Total | Hosts: 2 | Unusual Ports: [27020]
-2026-09-13 13:03:17,755 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:17] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:17,756 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:17] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:03:18,738 [INFO] [WARNING] security — 127.0.0.1: New open port detected: 8888
-2026-09-13 13:03:18,745 [INFO] [INFO] network — Network-scan: Baseline saved with 1 host(s)
-2026-09-13 13:03:18,756 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:18] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:19,189 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:19,201 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:19,687 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:19,758 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:19] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:20,759 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:20] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:03:20,761 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:20] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:20,830 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:21,755 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:21] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:22,758 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:22] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:23,209 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:23] "POST /api/remediate HTTP/1.1" 200 -
-2026-09-13 13:03:24,198 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 4 retransmissions | Packets: 15 TCP / 16 Total | Hosts: 0 | Unusual Ports: none
-2026-09-13 13:03:24,198 [INFO] Capture cycle (5s): 4 retransmissions | Packets: 15 TCP / 16 Total | Hosts: 0 | Unusual Ports: none
-2026-09-13 13:03:24,464 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:24] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:03:24,465 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:24] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:24,471 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:24] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:24,755 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:24] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:25,764 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:25] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:26,343 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:26,762 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:26] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:26,763 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:26] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:03:27,727 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:27,755 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:27] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:28,752 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:28] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:29,759 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:29] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:03:29,763 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:29] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:30,754 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:30] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:30,972 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 2 retransmissions | Packets: 8 TCP / 9 Total | Hosts: 0 | Unusual Ports: none
-2026-09-13 13:03:30,973 [INFO] Capture cycle (5s): 2 retransmissions | Packets: 8 TCP / 9 Total | Hosts: 0 | Unusual Ports: none
-2026-09-13 13:03:31,763 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:31] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:32,761 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:32] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:32,762 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:32] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:03:32,839 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:33,754 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:33] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:34,504 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:34,766 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:34] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:35,664 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:35,681 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:35,764 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:35] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:03:35,766 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:35] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:35,801 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:35,900 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:35,905 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:36,754 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:36] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:37,463 [INFO] [INFO] network — 2.16.55.217: Identified traffic destination: catalog.gamepass.com
-2026-09-13 13:03:37,470 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 7 retransmissions | Packets: 35 TCP / 55 Total | Hosts: 1 | Unusual Ports: none
-2026-09-13 13:03:37,470 [INFO] Capture cycle (5s): 7 retransmissions | Packets: 35 TCP / 55 Total | Hosts: 1 | Unusual Ports: none
-2026-09-13 13:03:37,751 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:37] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:38,762 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:38] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:38,763 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:38] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:03:39,744 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:39,753 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:39] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:40,767 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:40] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:41,006 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:41,728 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:41,754 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:41] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:03:41,758 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:41] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:42,753 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:42] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:43,767 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:43] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:44,519 [INFO] [INFO] network — 35.186.224.24: Identified traffic destination: spclient.wg.spotify.com
-2026-09-13 13:03:44,526 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [27020]
-2026-09-13 13:03:44,530 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 3 retransmissions | Packets: 15 TCP / 15 Total | Hosts: 1 | Unusual Ports: [27020]
-2026-09-13 13:03:44,530 [INFO] Capture cycle (5s): 3 retransmissions | Packets: 15 TCP / 15 Total | Hosts: 1 | Unusual Ports: [27020]
-2026-09-13 13:03:44,765 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:44] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:44,767 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:44] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:03:45,753 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:45] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:46,525 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:46,752 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:46] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:47,763 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:47] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:47,764 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:47] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:03:48,070 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:48,752 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:48] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:49,573 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:49,764 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:49] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:49,969 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:50,762 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:50] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:50,763 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:50] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:03:50,987 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 4 retransmissions | Packets: 6 TCP / 7 Total | Hosts: 0 | Unusual Ports: none
-2026-09-13 13:03:50,987 [INFO] Capture cycle (5s): 4 retransmissions | Packets: 6 TCP / 7 Total | Hosts: 0 | Unusual Ports: none
-2026-09-13 13:03:51,752 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:51] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:52,767 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:52] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:52,851 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:53,024 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:53,761 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:53] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:53,764 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:53] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:03:54,511 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:54,751 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:54] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:55,763 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:55] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:56,096 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:56,181 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:56,186 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:56,548 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:03:56,757 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:56] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:56,757 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:56] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:03:57,573 [INFO] [INFO] network — 150.171.27.11: Identified traffic destination: edge.microsoft.com
-2026-09-13 13:03:57,579 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 7 retransmissions | Packets: 22 TCP / 32 Total | Hosts: 1 | Unusual Ports: none
-2026-09-13 13:03:57,580 [INFO] Capture cycle (5s): 7 retransmissions | Packets: 22 TCP / 32 Total | Hosts: 1 | Unusual Ports: none
-2026-09-13 13:03:57,751 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:57] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:58,758 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:58] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:03:59,768 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:59] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:03:59,770 [INFO] 127.0.0.1 - - [13/Sep/2026 13:03:59] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:04:00,090 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:04:00,757 [INFO] 127.0.0.1 - - [13/Sep/2026 13:04:00] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:04:01,118 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:04:01,756 [INFO] 127.0.0.1 - - [13/Sep/2026 13:04:01] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:04:02,755 [INFO] 127.0.0.1 - - [13/Sep/2026 13:04:02] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:04:02,755 [INFO] 127.0.0.1 - - [13/Sep/2026 13:04:02] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:04:03,757 [INFO] 127.0.0.1 - - [13/Sep/2026 13:04:03] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:04:04,091 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [4070]
-2026-09-13 13:04:04,096 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 2 retransmissions | Packets: 6 TCP / 6 Total | Hosts: 0 | Unusual Ports: [4070]
-2026-09-13 13:04:04,096 [INFO] Capture cycle (5s): 2 retransmissions | Packets: 6 TCP / 6 Total | Hosts: 0 | Unusual Ports: [4070]
-2026-09-13 13:04:04,754 [INFO] 127.0.0.1 - - [13/Sep/2026 13:04:04] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:04:05,521 [INFO] [INFO] network — port-scanner: Scan cycle complete — no changes from baseline
-2026-09-13 13:04:05,764 [INFO] 127.0.0.1 - - [13/Sep/2026 13:04:05] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:04:05,764 [INFO] 127.0.0.1 - - [13/Sep/2026 13:04:05] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:04:06,513 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:04:06,757 [INFO] 127.0.0.1 - - [13/Sep/2026 13:04:06] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:04:07,618 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
-2026-09-13 13:04:07,759 [INFO] 127.0.0.1 - - [13/Sep/2026 13:04:07] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:04:08,756 [INFO] 127.0.0.1 - - [13/Sep/2026 13:04:08] "GET /api/metrics HTTP/1.1" 200 -
-2026-09-13 13:04:08,757 [INFO] 127.0.0.1 - - [13/Sep/2026 13:04:08] "GET /data HTTP/1.1" 200 -
-2026-09-13 13:04:09,757 [INFO] 127.0.0.1 - - [13/Sep/2026 13:04:09] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:02:20,028 [INFO] [33mPress CTRL+C to quit[0m
+2026-09-13 17:02:22,200 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:22] "GET / HTTP/1.1" 200 -
+2026-09-13 17:02:22,666 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,210 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,240 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,259 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,266 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,272 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,277 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,283 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,289 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,329 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,460 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,604 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,610 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,616 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,660 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,666 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,673 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,678 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,694 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,701 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,706 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,711 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,716 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,723 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,729 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,734 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:23] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:02:23,751 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,764 [ERROR] Exception on /verdict [GET]
+Traceback (most recent call last):
+  File "flask\app.py", line 1511, in wsgi_app
+  File "flask\app.py", line 919, in full_dispatch_request
+  File "flask\app.py", line 917, in full_dispatch_request
+  File "flask\app.py", line 902, in dispatch_request
+  File "desktop_app.py", line 615, in verdict
+    return jsonify({"verdict": insights.get_verdict(), "correlation": correlation_story})
+                               ~~~~~~~~~~~~~~~~~~~~^^
+  File "analysis\insights.py", line 110, in get_verdict
+    findings = [f for f in get_all_findings() if f.timestamp >= since]
+                                                 ^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2026-09-13 17:02:23,767 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:23] "[35m[1mGET /verdict HTTP/1.1[0m" 500 -
+2026-09-13 17:02:23,782 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,789 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:23,868 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-09-13 17:02:24,269 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:24,412 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:24,473 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:24,485 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:24,490 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:24,526 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:24,586 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:24,611 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:24,631 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:24,938 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:24,993 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:25,257 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:25,384 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:25,571 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:25,730 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:25,737 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:25,744 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:25,750 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:25,756 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:25,762 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:25,768 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:25,927 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:25,934 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:25,942 [INFO] [INFO] network — 40.126.53.19: Identified traffic destination: login.live.com
+2026-09-13 17:02:25,950 [INFO] [INFO] network — 20.42.72.131: Identified traffic destination: mobile.events.data.microsoft.com
+2026-09-13 17:02:25,958 [INFO] [INFO] network — 104.17.24.14: Identified traffic destination: cdnjs.cloudflare.com
+2026-09-13 17:02:25,964 [INFO] [INFO] network — 52.98.159.18: Identified traffic destination: substrate.office.com
+2026-09-13 17:02:25,970 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 51 retransmissions | Packets: 108 TCP / 113 Total | Hosts: 4 | Unusual Ports: none
+2026-09-13 17:02:25,970 [INFO] Capture cycle (5s): 51 retransmissions | Packets: 108 TCP / 113 Total | Hosts: 4 | Unusual Ports: none
+2026-09-13 17:02:26,722 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:26] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:02:27,105 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:27,159 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:27] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:02:28,550 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:28,652 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:28,657 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:28,662 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:28,698 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:28,753 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:28,787 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:28,791 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:28,973 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:28] "POST /settings HTTP/1.1" 200 -
+2026-09-13 17:02:28,981 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:28] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:02:28,982 [ERROR] Exception on /verdict [GET]
+Traceback (most recent call last):
+  File "flask\app.py", line 1511, in wsgi_app
+  File "flask\app.py", line 919, in full_dispatch_request
+  File "flask\app.py", line 917, in full_dispatch_request
+  File "flask\app.py", line 902, in dispatch_request
+  File "desktop_app.py", line 615, in verdict
+    return jsonify({"verdict": insights.get_verdict(), "correlation": correlation_story})
+                               ~~~~~~~~~~~~~~~~~~~~^^
+  File "analysis\insights.py", line 110, in get_verdict
+    findings = [f for f in get_all_findings() if f.timestamp >= since]
+                                                 ^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2026-09-13 17:02:28,984 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:28] "[35m[1mGET /verdict HTTP/1.1[0m" 500 -
+2026-09-13 17:02:29,720 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:29] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:02:29,826 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:29] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:02:29,907 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:30,369 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:31,979 [INFO] [INFO] network — 52.123.243.16: Identified traffic destination: config.edge.skype.com
+2026-09-13 17:02:31,984 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [27020]
+2026-09-13 17:02:31,996 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 11 retransmissions | Packets: 32 TCP / 71 Total | Hosts: 1 | Unusual Ports: [27020]
+2026-09-13 17:02:31,996 [INFO] Capture cycle (5s): 11 retransmissions | Packets: 32 TCP / 71 Total | Hosts: 1 | Unusual Ports: [27020]
+2026-09-13 17:02:32,584 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:32] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:02:32,727 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:32] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:02:35,140 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:35] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:02:35,723 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:35] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:02:37,420 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:37] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:02:37,988 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 0 retransmissions | Packets: 2 TCP / 2 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:02:37,988 [INFO] Capture cycle (5s): 0 retransmissions | Packets: 2 TCP / 2 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:02:38,720 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:38] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:02:40,054 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:40] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:02:41,721 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:41] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:02:42,616 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:42] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:02:44,453 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 0 retransmissions | Packets: 1 TCP / 1 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:02:44,454 [INFO] Capture cycle (5s): 0 retransmissions | Packets: 1 TCP / 1 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:02:44,732 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:44] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:02:44,866 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:44] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:02:47,362 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:47] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:02:47,727 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:47] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:02:49,663 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:49] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:02:50,728 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:50] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:02:50,886 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 0 retransmissions | Packets: 18 TCP / 18 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:02:50,886 [INFO] Capture cycle (5s): 0 retransmissions | Packets: 18 TCP / 18 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:02:52,037 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:52] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:02:53,721 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:53] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:02:54,529 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:54] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:02:56,528 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [8925]
+2026-09-13 17:02:56,533 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 0 retransmissions | Packets: 2 TCP / 4 Total | Hosts: 0 | Unusual Ports: [8925]
+2026-09-13 17:02:56,533 [INFO] Capture cycle (5s): 0 retransmissions | Packets: 2 TCP / 4 Total | Hosts: 0 | Unusual Ports: [8925]
+2026-09-13 17:02:56,725 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:56] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:02:57,032 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:57] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:02:57,574 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:57,861 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:57,866 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:02:59,725 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:59] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:02:59,884 [INFO] 127.0.0.1 - - [13/Sep/2026 17:02:59] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:00,194 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:00] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:01,919 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:01] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:02,518 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [27020]
+2026-09-13 17:03:02,523 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 3 retransmissions | Packets: 8 TCP / 8 Total | Hosts: 0 | Unusual Ports: [27020]
+2026-09-13 17:03:02,523 [INFO] Capture cycle (5s): 3 retransmissions | Packets: 8 TCP / 8 Total | Hosts: 0 | Unusual Ports: [27020]
+2026-09-13 17:03:02,722 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:02] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:03:02,952 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:02] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:03,384 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:03] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:03,903 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,109 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,114 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,231 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,240 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,249 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,257 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,262 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,267 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,272 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,277 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,282 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,287 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,375 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,381 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,387 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,392 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,398 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,404 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,409 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,415 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,420 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,425 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,430 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,435 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,440 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,445 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,522 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,528 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:04,644 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:05,007 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:05] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:05,035 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:05,041 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:05,046 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:05,051 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:05,056 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:05,230 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:05,728 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:05] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:03:06,061 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:06] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:06,760 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:06] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:08,165 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:08] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:08,723 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:08] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:03:08,736 [INFO] [INFO] network — 150.171.110.118: Identified traffic destination: main.vscode-cdn.net
+2026-09-13 17:03:08,743 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 36 retransmissions | Packets: 49 TCP / 52 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:03:08,743 [INFO] Capture cycle (5s): 36 retransmissions | Packets: 49 TCP / 52 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:03:09,204 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:09] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:09,447 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:10,155 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:10] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:10,167 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:10] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:10,284 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:10,290 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:11,725 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:11] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:03:12,090 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:12] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:13,072 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:13] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:13,492 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:13] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:14,325 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 3 retransmissions | Packets: 27 TCP / 27 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:03:14,325 [INFO] Capture cycle (5s): 3 retransmissions | Packets: 27 TCP / 27 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:03:14,734 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:14] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:03:15,031 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:15] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:15,964 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:15] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:16,680 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:16] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:17,721 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:17] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:03:17,944 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:17] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:18,886 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:18] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:19,821 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:19] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:19,892 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:20,268 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 1 retransmissions | Packets: 11 TCP / 11 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:03:20,269 [INFO] Capture cycle (5s): 1 retransmissions | Packets: 11 TCP / 11 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:03:20,724 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:20] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:03:20,980 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:20] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:22,034 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:22] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:22,343 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:22,456 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:22,566 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:22,879 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:22,984 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:23,070 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:23] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:23,152 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:23,172 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:23] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:23,565 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:23,722 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:23] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:03:24,994 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:24] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:26,050 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:26] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:26,496 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:26] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:26,541 [INFO] [INFO] network — 92.223.97.97: Identified traffic destination: msedge.b.tlu.dl.delivery.mp.microsoft.com
+2026-09-13 17:03:26,547 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 7 retransmissions | Packets: 24 TCP / 26 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:03:26,547 [INFO] Capture cycle (5s): 7 retransmissions | Packets: 24 TCP / 26 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:03:26,729 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:26] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:03:28,252 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:28] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:29,241 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:29] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:29,736 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:29] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:03:29,942 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:29] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:31,008 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:31] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:31,303 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:32,056 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:32] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:32,669 [INFO] [INFO] network — 92.223.97.97: Identified traffic destination: msedge.b.tlu.dl.delivery.mp.microsoft.com
+2026-09-13 17:03:32,675 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 1 retransmissions | Packets: 8 TCP / 8 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:03:32,675 [INFO] Capture cycle (5s): 1 retransmissions | Packets: 8 TCP / 8 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:03:32,732 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:32] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:03:33,164 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:33] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:33,410 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:33,412 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:33] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:33,601 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:33,608 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:33,806 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:35,178 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:35] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:35,422 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:35,734 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:35] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:03:36,177 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:36,183 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:36,253 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:36] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:36,464 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:36,470 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:36,475 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:36,488 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:36,493 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:36,504 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:36,509 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:36,685 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:36,690 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:36,696 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:36,760 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:36] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:38,195 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:38] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:38,734 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:38] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:03:38,875 [INFO] [INFO] network — 142.251.152.4: Identified traffic destination: www.youtube.com
+2026-09-13 17:03:38,880 [INFO] [INFO] network — 199.232.81.91: Identified traffic destination: mozilla-ohttp.fastly-edge.com
+2026-09-13 17:03:38,885 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [8925]
+2026-09-13 17:03:38,891 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 17 retransmissions | Packets: 51 TCP / 67 Total | Hosts: 2 | Unusual Ports: [8925]
+2026-09-13 17:03:38,891 [INFO] Capture cycle (5s): 17 retransmissions | Packets: 51 TCP / 67 Total | Hosts: 2 | Unusual Ports: [8925]
+2026-09-13 17:03:39,113 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:39] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:39,967 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:39] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:40,026 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:40] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:41,724 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:41] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:03:42,075 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:42] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:43,060 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:43] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:43,360 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:43] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:44,220 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:44,420 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:44,504 [INFO] [INFO] network — 92.223.97.97: Identified traffic destination: msedge.b.tlu.dl.delivery.mp.microsoft.com
+2026-09-13 17:03:44,511 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 2 retransmissions | Packets: 4 TCP / 5 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:03:44,511 [INFO] Capture cycle (5s): 2 retransmissions | Packets: 4 TCP / 5 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:03:44,735 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:44] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:03:45,116 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:45,125 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:45,132 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:45,175 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:45] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:45,314 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:45,320 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:45,327 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:45,600 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:45,613 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:45,794 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:45,802 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:45,895 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:45,903 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:45,909 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:45,926 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:46,090 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:46,258 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:46,264 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:46,296 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:46,382 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:46] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:46,402 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:46,408 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:47,058 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:47,063 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:47,117 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:47] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:47,149 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:47,156 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:47,163 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:47,171 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:47,332 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:47,395 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:47,403 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:47,410 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:47,730 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:47] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:03:48,279 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:48,410 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:48,832 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:48] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:49,744 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:49] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:50,296 [INFO] [INFO] network — 20.190.183.26: Identified traffic destination: graph.microsoft.com
+2026-09-13 17:03:50,302 [INFO] [INFO] network — 40.126.53.19: Identified traffic destination: login.live.com
+2026-09-13 17:03:50,308 [INFO] [INFO] network — 23.36.15.146: Identified traffic destination: catalog.gamepass.com
+2026-09-13 17:03:50,313 [INFO] [INFO] network — 52.98.159.18: Identified traffic destination: substrate.office.com
+2026-09-13 17:03:50,319 [INFO] [INFO] network — 52.98.200.194: Identified traffic destination: substrate.office.com
+2026-09-13 17:03:50,324 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 32 retransmissions | Packets: 83 TCP / 152 Total | Hosts: 5 | Unusual Ports: none
+2026-09-13 17:03:50,324 [INFO] Capture cycle (5s): 32 retransmissions | Packets: 83 TCP / 152 Total | Hosts: 5 | Unusual Ports: none
+2026-09-13 17:03:50,519 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:50] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:50,734 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:50] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:03:50,842 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:50] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:52,191 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:52] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:52,247 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:52,453 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:52,458 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:52,464 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:52,641 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:52,695 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:53,056 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:53,061 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:53,067 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:53,073 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:53,142 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:53] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:53,734 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:53] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:03:54,110 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:54] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:54,207 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:54] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:56,103 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:56] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:56,113 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:03:56,120 [INFO] [INFO] network — 20.42.73.26: Identified traffic destination: self.events.data.microsoft.com
+2026-09-13 17:03:56,127 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [27020]
+2026-09-13 17:03:56,134 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 11 retransmissions | Packets: 22 TCP / 36 Total | Hosts: 1 | Unusual Ports: [27020]
+2026-09-13 17:03:56,135 [INFO] Capture cycle (5s): 11 retransmissions | Packets: 22 TCP / 36 Total | Hosts: 1 | Unusual Ports: [27020]
+2026-09-13 17:03:56,726 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:56] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:03:57,320 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:57] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:57,831 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:57] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:59,544 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:59] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:03:59,742 [INFO] 127.0.0.1 - - [13/Sep/2026 17:03:59] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:04:00,665 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:00] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:01,072 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:01,156 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:01,165 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:01,186 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:01,631 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:01] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:01,817 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:01] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:02,064 [INFO] [INFO] network — 92.223.97.97: Identified traffic destination: msedge.b.tlu.dl.delivery.mp.microsoft.com
+2026-09-13 17:04:02,070 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 4 retransmissions | Packets: 8 TCP / 8 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:04:02,070 [INFO] Capture cycle (5s): 4 retransmissions | Packets: 8 TCP / 8 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:04:02,738 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:02] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:04:03,471 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:03] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:04,387 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:04] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:05,064 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:05,069 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:05,310 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:05] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:05,416 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:05] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:05,722 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:05] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:04:07,280 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:07] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:07,965 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [27020]
+2026-09-13 17:04:07,970 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 2 retransmissions | Packets: 11 TCP / 13 Total | Hosts: 0 | Unusual Ports: [27020]
+2026-09-13 17:04:07,970 [INFO] Capture cycle (5s): 2 retransmissions | Packets: 11 TCP / 13 Total | Hosts: 0 | Unusual Ports: [27020]
+2026-09-13 17:04:08,341 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:08] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:08,732 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:08] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:04:09,035 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:09] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:10,427 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:10] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:11,388 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:11] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:11,762 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:11] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:04:11,958 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:11] "POST /api/remediate HTTP/1.1" 200 -
+2026-09-13 17:04:12,524 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:12] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:12,805 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:12] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:13,991 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 0 retransmissions | Packets: 2 TCP / 8 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:04:13,991 [INFO] Capture cycle (5s): 0 retransmissions | Packets: 2 TCP / 8 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:04:14,408 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:14] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:15,320 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:15] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:16,145 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:16] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:16,168 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:16] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:04:16,250 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:16] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:17,131 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:17,246 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:17,253 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:17,301 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:17,409 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:17,416 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:17,593 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:17,600 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:17,731 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:17] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:04:18,421 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:18] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:19,430 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:19] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:19,850 [INFO] [INFO] network — 20.23.115.113: Identified traffic destination: fd.api.iris.microsoft.com
+2026-09-13 17:04:19,855 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 8 retransmissions | Packets: 27 TCP / 29 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:04:19,855 [INFO] Capture cycle (5s): 8 retransmissions | Packets: 27 TCP / 29 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:04:19,915 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:19] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:20,730 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:20] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:04:21,032 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:21,266 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:21] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:21,581 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:21,876 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:21,895 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:21,901 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:21,907 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:21,928 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:21,933 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:21,939 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:21,944 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:21,949 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:21,954 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:21,968 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:21,973 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,079 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,086 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,093 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,100 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,108 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,115 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,122 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,129 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,135 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,143 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,150 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,157 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,165 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,172 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,178 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,184 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,191 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,197 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,203 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,209 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,216 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,223 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,229 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,236 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,243 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,249 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,256 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,264 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,271 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,280 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,286 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,294 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,301 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,308 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,315 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,322 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,328 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,334 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:22] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:22,335 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,345 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,351 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,357 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,364 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:22,371 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:23,399 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:23] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:23,598 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:23] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:23,723 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:23] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:04:25,315 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:25] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:25,658 [INFO] [INFO] network — 92.223.97.97: Identified traffic destination: msedge.b.tlu.dl.delivery.mp.microsoft.com
+2026-09-13 17:04:25,663 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [8925, 27020]
+2026-09-13 17:04:25,668 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 57 retransmissions | Packets: 60 TCP / 61 Total | Hosts: 1 | Unusual Ports: [8925, 27020]
+2026-09-13 17:04:25,668 [INFO] Capture cycle (5s): 57 retransmissions | Packets: 60 TCP / 61 Total | Hosts: 1 | Unusual Ports: [8925, 27020]
+2026-09-13 17:04:26,160 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:26] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:26,738 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:26] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:04:26,923 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:26] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:28,152 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:28] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:29,090 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:29] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:29,729 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:29] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:04:30,118 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:30] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:30,303 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:30] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:31,681 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 0 retransmissions | Packets: 7 TCP / 7 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:04:31,681 [INFO] Capture cycle (5s): 0 retransmissions | Packets: 7 TCP / 7 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:04:32,259 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:32] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:32,738 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:32] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:04:33,333 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:33] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:33,712 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:33,802 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:33] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:33,820 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:34,528 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:34,533 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:34,538 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:34,901 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:34] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:35,722 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:35] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:04:36,908 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:36] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:38,165 [INFO] [INFO] network — 35.240.39.145: Identified traffic destination: thi-cow-gs-rllt.c.bytro.com
+2026-09-13 17:04:38,171 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 5 retransmissions | Packets: 19 TCP / 25 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:04:38,171 [INFO] Capture cycle (5s): 5 retransmissions | Packets: 19 TCP / 25 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:04:40,373 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:40] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:40,382 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:40] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:04:40,406 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:40] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:40,595 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:40] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:41,057 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:41] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:41,120 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:41] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:41,263 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:41] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:41,727 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:41] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:04:42,638 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:43,936 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 1 retransmissions | Packets: 3 TCP / 3 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:04:43,936 [INFO] Capture cycle (5s): 1 retransmissions | Packets: 3 TCP / 3 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:04:44,233 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:44] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:44,282 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:44] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:44,590 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:44] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:44,740 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:44] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:04:44,982 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:44] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:46,440 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:46] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:46,701 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:46,987 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,136 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,141 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,148 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,154 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,160 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,167 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,173 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,178 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,185 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,192 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,198 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,205 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,211 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,218 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,223 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,232 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,237 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,245 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,252 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,258 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,265 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,272 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,277 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,282 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,288 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,293 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,298 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,303 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,308 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,314 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,319 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,324 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,329 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,334 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,339 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,344 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,349 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,355 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,360 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,365 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,370 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,375 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,380 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:47] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:47,381 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,386 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,392 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,398 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,404 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,410 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,415 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,421 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,428 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,435 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,440 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,446 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,452 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,457 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,463 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,468 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,473 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,478 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,483 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,488 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,493 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,498 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,503 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,508 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,513 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,518 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,523 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,528 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,533 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,537 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,543 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,548 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,553 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,558 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,563 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,568 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,573 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,578 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,583 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,589 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,595 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,600 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,606 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:47,739 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:47] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:04:47,945 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:48,124 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:48,255 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:48,261 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:48,269 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:48,274 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:48,280 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:48,317 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:48] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:48,532 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:48] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:49,373 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:49,699 [INFO] [INFO] network — 92.223.97.97: Identified traffic destination: msedge.b.tlu.dl.delivery.mp.microsoft.com
+2026-09-13 17:04:49,705 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [27020]
+2026-09-13 17:04:49,710 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 95 retransmissions | Packets: 116 TCP / 116 Total | Hosts: 1 | Unusual Ports: [27020]
+2026-09-13 17:04:49,710 [INFO] Capture cycle (5s): 95 retransmissions | Packets: 116 TCP / 116 Total | Hosts: 1 | Unusual Ports: [27020]
+2026-09-13 17:04:50,311 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:50] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:50,739 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:50] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:04:51,013 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:04:51,345 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:51] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:52,118 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:52] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:53,354 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:53] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:53,723 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:53] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:04:54,469 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:54] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:55,348 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:55] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:55,676 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:55] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:55,822 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 1 retransmissions | Packets: 6 TCP / 6 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:04:55,822 [INFO] Capture cycle (5s): 1 retransmissions | Packets: 6 TCP / 6 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:04:56,737 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:56] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:04:57,247 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:57] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:58,164 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:58] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:59,053 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:59] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:04:59,733 [INFO] 127.0.0.1 - - [13/Sep/2026 17:04:59] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:05:00,147 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:00] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:01,135 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:01] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:02,264 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:02] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:02,285 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 0 retransmissions | Packets: 7 TCP / 7 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:05:02,285 [INFO] Capture cycle (5s): 0 retransmissions | Packets: 7 TCP / 7 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:05:02,527 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:02] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:02,729 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:02] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:05:04,275 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:04] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:05,092 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:05] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:05,734 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:05] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:05:05,822 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:05] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:06,682 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:06,797 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:07,022 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:07,073 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:07] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:08,033 [INFO] [INFO] network — 35.240.39.145: Identified traffic destination: thi-cow-gs-rllt.c.bytro.com
+2026-09-13 17:05:08,039 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 3 retransmissions | Packets: 10 TCP / 10 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:05:08,039 [INFO] Capture cycle (5s): 3 retransmissions | Packets: 10 TCP / 10 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:05:08,057 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:08] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:08,728 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:08] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:05:09,119 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:09] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:09,218 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:09] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:09,552 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:09,669 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:09,795 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:10,060 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:10,958 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:11,756 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:11,790 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:11] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:05:12,372 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:12,387 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:12] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:12,642 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:12,756 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:13,060 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:13,232 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:13,248 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:14,169 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:14,181 [INFO] [INFO] network — 172.64.149.209: Identified traffic destination: www.callofwar.com
+2026-09-13 17:05:14,191 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 13 retransmissions | Packets: 37 TCP / 37 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:05:14,191 [INFO] Capture cycle (5s): 13 retransmissions | Packets: 37 TCP / 37 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:05:14,305 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:14] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:14,994 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:14] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:15,010 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:15] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:05:15,030 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:15,959 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:16,824 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:16] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:17,490 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:17,693 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:17,700 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:18,015 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:18] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:18,158 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:18,273 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:18,666 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:18,672 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:18,678 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:18,684 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:18,814 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:18] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:18,822 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:18,829 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:18,849 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:18] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:05:19,653 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:19,807 [INFO] [INFO] network — 172.64.149.209: Identified traffic destination: www.callofwar.com
+2026-09-13 17:05:19,819 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [27020]
+2026-09-13 17:05:19,826 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 14 retransmissions | Packets: 47 TCP / 47 Total | Hosts: 1 | Unusual Ports: [27020]
+2026-09-13 17:05:19,827 [INFO] Capture cycle (5s): 14 retransmissions | Packets: 47 TCP / 47 Total | Hosts: 1 | Unusual Ports: [27020]
+2026-09-13 17:05:20,336 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:20] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:21,277 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:21] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:21,298 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:21] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:05:21,485 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:21,583 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:21] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:21,642 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:22,694 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:22,702 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:23,526 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:23] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:24,431 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:24] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:25,325 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:25,529 [INFO] [INFO] network — 172.64.149.209: Identified traffic destination: www.callofwar.com
+2026-09-13 17:05:25,536 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 5 retransmissions | Packets: 18 TCP / 28 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:05:25,536 [INFO] Capture cycle (5s): 5 retransmissions | Packets: 18 TCP / 28 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:05:25,644 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:25] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:25,660 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:25] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:05:26,559 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:26,608 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:26] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:26,747 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:26,861 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:26,868 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:27,073 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:27,518 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:27,710 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:27,717 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:27] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:27,723 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:27,814 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:27] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:27,829 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:27] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:05:28,117 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:28,184 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:28,228 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:28,632 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:28,775 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:28,903 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:29,594 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:29,756 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:30,359 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:30,481 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:30] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:30,567 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:30,868 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:30,973 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:30] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:31,584 [INFO] [INFO] network — 35.240.39.145: Identified traffic destination: thi-cow-gs-rllt.c.bytro.com
+2026-09-13 17:05:31,591 [INFO] [INFO] network — 172.64.149.209: Identified traffic destination: www.callofwar.com
+2026-09-13 17:05:31,597 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 19 retransmissions | Packets: 57 TCP / 59 Total | Hosts: 2 | Unusual Ports: none
+2026-09-13 17:05:31,597 [INFO] Capture cycle (5s): 19 retransmissions | Packets: 57 TCP / 59 Total | Hosts: 2 | Unusual Ports: none
+2026-09-13 17:05:32,275 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:32] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:32,314 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:32] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:05:32,418 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:32,427 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:32,485 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:32,678 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:32,719 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:33,497 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:33] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:33,546 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:34,660 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:34] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:34,702 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:34] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:34,720 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:34] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:05:34,724 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:34,782 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:34,842 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:34,943 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:35,751 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:37,264 [INFO] [INFO] network — 35.240.39.145: Identified traffic destination: thi-cow-gs-rllt.c.bytro.com
+2026-09-13 17:05:37,270 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 11 retransmissions | Packets: 38 TCP / 39 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:05:37,270 [INFO] Capture cycle (5s): 11 retransmissions | Packets: 38 TCP / 39 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:05:37,871 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:37] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:38,163 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:38,205 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:38,213 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:38] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:38,257 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:38,704 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:39,009 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:39,077 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:39,381 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:39,442 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:39,465 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:39,714 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:39,956 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:40,033 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:40,098 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:40] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:40,120 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:40] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:05:41,059 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:41] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:42,133 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:42] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:42,392 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:42,488 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:42] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:43,403 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:43,410 [INFO] [INFO] network — 172.64.149.209: Identified traffic destination: www.callofwar.com
+2026-09-13 17:05:43,417 [INFO] [INFO] network — 35.240.39.145: Identified traffic destination: thi-cow-gs-rllt.c.bytro.com
+2026-09-13 17:05:43,424 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [27020]
+2026-09-13 17:05:43,433 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 14 retransmissions | Packets: 43 TCP / 44 Total | Hosts: 2 | Unusual Ports: [27020]
+2026-09-13 17:05:43,433 [INFO] Capture cycle (5s): 14 retransmissions | Packets: 43 TCP / 44 Total | Hosts: 2 | Unusual Ports: [27020]
+2026-09-13 17:05:44,790 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:44] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:44,807 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:44] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:05:44,990 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:44] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:46,669 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:46] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:47,309 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:47] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:47,396 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:47,449 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:47,594 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:47,720 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:47,744 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:48,452 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:48,528 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:48] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:48,817 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:48] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:48,847 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:48] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:05:49,701 [INFO] [INFO] network — 35.240.39.145: Identified traffic destination: thi-cow-gs-rllt.c.bytro.com
+2026-09-13 17:05:49,707 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 6 retransmissions | Packets: 30 TCP / 31 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:05:49,708 [INFO] Capture cycle (5s): 6 retransmissions | Packets: 30 TCP / 31 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:05:51,140 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:51] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:51,218 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:51] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:52,639 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:52] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:53,218 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:53] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:53,258 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:53] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:05:54,661 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:54,745 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:54] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:54,905 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:54] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:55,821 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [8925]
+2026-09-13 17:05:55,830 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 1 retransmissions | Packets: 5 TCP / 5 Total | Hosts: 0 | Unusual Ports: [8925]
+2026-09-13 17:05:55,831 [INFO] Capture cycle (5s): 1 retransmissions | Packets: 5 TCP / 5 Total | Hosts: 0 | Unusual Ports: [8925]
+2026-09-13 17:05:56,915 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:57,075 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:57,368 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:57,447 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:57,493 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:57,510 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:57,522 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:57] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:57,522 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:57,539 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:57,563 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:57,634 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:57] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:05:57,654 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:57] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:05:57,741 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:57,750 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:57,959 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:58,095 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:58,208 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:05:59,952 [INFO] 127.0.0.1 - - [13/Sep/2026 17:05:59] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:00,158 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:00] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:01,279 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:01] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:01,765 [INFO] [INFO] network — 172.64.149.209: Identified traffic destination: www.callofwar.com
+2026-09-13 17:06:01,774 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 14 retransmissions | Packets: 35 TCP / 35 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:06:01,774 [INFO] Capture cycle (5s): 14 retransmissions | Packets: 35 TCP / 35 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:06:02,118 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:02] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:02,142 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:02] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:04,312 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:04] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:04,351 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:04] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:06,330 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:06] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:06,455 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:06,482 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:06] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:06,594 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:06,961 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:07,009 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:07,016 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:07,642 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:07] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:07,655 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:07] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:07,744 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:07,751 [INFO] [INFO] network — 35.240.39.145: Identified traffic destination: thi-cow-gs-rllt.c.bytro.com
+2026-09-13 17:06:07,759 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 6 retransmissions | Packets: 16 TCP / 19 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:06:07,759 [INFO] Capture cycle (5s): 6 retransmissions | Packets: 16 TCP / 19 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:06:08,300 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:08] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:09,618 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:09,665 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:09,706 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:10,045 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:10] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:10,155 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:10] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:10,382 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:10,411 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:12,109 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:12,136 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:12] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:12,472 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:12] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:12,486 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:12] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:13,382 [INFO] [INFO] network — 172.64.149.209: Identified traffic destination: www.callofwar.com
+2026-09-13 17:06:13,389 [INFO] [INFO] network — 23.36.15.149: Identified traffic destination: msedge.b.tlu.dl.delivery.mp.microsoft.com
+2026-09-13 17:06:13,395 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [27020]
+2026-09-13 17:06:13,404 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:13] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:13,404 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 6 retransmissions | Packets: 22 TCP / 29 Total | Hosts: 2 | Unusual Ports: [27020]
+2026-09-13 17:06:13,405 [INFO] Capture cycle (5s): 6 retransmissions | Packets: 22 TCP / 29 Total | Hosts: 2 | Unusual Ports: [27020]
+2026-09-13 17:06:13,891 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:13] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:15,416 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:15] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:15,503 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:15] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:17,039 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:17] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:17,140 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:17,294 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:17] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:17,304 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:17] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:17,530 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:17,767 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:17,798 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:17,805 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:17,810 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:17,816 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:17,821 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:17,827 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:17,833 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:17,838 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:17,844 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:17,850 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:17,856 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:17,861 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:17,867 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:17,873 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:17,992 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,000 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,007 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,014 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,021 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,027 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,034 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,041 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,048 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,056 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,062 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,069 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,074 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,081 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,088 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,094 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,099 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,105 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,110 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,122 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,128 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,135 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,145 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:18] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:18,145 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,153 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,159 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,165 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,171 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,177 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,184 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,189 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,196 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,206 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,229 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,235 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,242 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,249 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,259 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,266 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,273 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,280 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,287 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,295 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,301 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,307 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,314 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,320 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,326 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,333 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:18,651 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:18] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:19,047 [INFO] [INFO] network — 23.36.15.149: Identified traffic destination: msedge.b.tlu.dl.delivery.mp.microsoft.com
+2026-09-13 17:06:19,053 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 65 retransmissions | Packets: 72 TCP / 72 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:06:19,053 [INFO] Capture cycle (5s): 65 retransmissions | Packets: 72 TCP / 72 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:06:20,322 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:20] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:20,354 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:20] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:20,370 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:20] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:21,922 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:21] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:22,145 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:22] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:23,064 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:23] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:23,077 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:23] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:23,370 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:23] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:23,495 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:23] "POST /api/remediate HTTP/1.1" 200 -
+2026-09-13 17:06:24,799 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 0 retransmissions | Packets: 2 TCP / 2 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:06:24,799 [INFO] Capture cycle (5s): 0 retransmissions | Packets: 2 TCP / 2 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:06:24,983 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:24] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:25,010 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:25] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:25,024 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:25] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:25,463 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:26,780 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:26] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:26,988 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:26] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:27,000 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:27] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:27,783 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:27] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:28,257 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:28] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:28,272 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:28] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:29,673 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:29] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:29,689 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:29] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:29,890 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:29] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:29,904 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:29] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:30,540 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 1 retransmissions | Packets: 14 TCP / 16 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:06:30,540 [INFO] Capture cycle (5s): 1 retransmissions | Packets: 14 TCP / 16 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:06:31,350 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:31] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:31,556 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:31] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:31,569 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:31] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:31,580 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:31] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:31,592 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:31] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:32,338 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:32] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:32,846 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,009 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,016 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,021 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,029 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,036 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,043 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,049 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,056 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,063 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,070 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,078 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,085 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,092 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,099 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,106 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,114 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,122 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,129 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,137 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,144 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,151 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,158 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,164 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,170 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,177 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,191 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:33] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:33,192 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,200 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,226 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:33] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:33,230 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,236 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,244 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,250 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,255 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,260 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,266 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,271 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,276 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,283 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,291 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,299 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,308 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,315 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,321 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,327 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,333 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,429 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,435 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,441 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,447 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,453 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,458 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,463 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,468 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,474 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,480 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,486 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,492 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,498 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,503 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,628 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,635 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,641 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,648 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,655 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,661 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,667 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,673 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,678 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,684 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,689 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:33,694 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,324 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:34] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:34,424 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:34] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:34,480 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,649 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,655 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,662 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,668 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,673 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,679 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,685 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,691 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,696 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,702 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,708 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,713 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,719 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,851 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,857 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,965 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,971 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,979 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,986 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,991 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:34,997 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,003 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,009 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,055 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,060 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,066 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,072 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,729 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:35] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:35,753 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,855 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:35] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:35,872 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,878 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,885 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,891 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,897 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,903 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,909 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,914 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,921 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,927 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,936 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,942 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,949 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,958 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,965 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,977 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:35,984 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:36,087 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:36,190 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:36] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:36,424 [INFO] [INFO] network — 23.36.15.149: Identified traffic destination: msedge.b.tlu.dl.delivery.mp.microsoft.com
+2026-09-13 17:06:36,430 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [27020]
+2026-09-13 17:06:36,436 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 118 retransmissions | Packets: 123 TCP / 123 Total | Hosts: 1 | Unusual Ports: [27020]
+2026-09-13 17:06:36,436 [INFO] Capture cycle (5s): 118 retransmissions | Packets: 123 TCP / 123 Total | Hosts: 1 | Unusual Ports: [27020]
+2026-09-13 17:06:37,017 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,023 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,029 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,038 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,048 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,067 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,090 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,099 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,107 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,116 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,125 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,132 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,138 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,145 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,152 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,158 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,166 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,172 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,178 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,184 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,189 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,195 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,201 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,207 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,213 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,219 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,224 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,230 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,236 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,244 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:37] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:37,245 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,252 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,258 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,265 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,272 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,278 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,284 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,291 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,298 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,304 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,310 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,316 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,322 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,328 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,334 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,341 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,348 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,355 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,364 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,372 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,403 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,413 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,418 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,424 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,429 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,434 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,439 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,445 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,450 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,456 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,461 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,466 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,472 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,482 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,488 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,493 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,498 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,505 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,511 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,517 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,523 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,528 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,534 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,539 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,545 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,551 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,557 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,562 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,568 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,574 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,580 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,586 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,592 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,597 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,604 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,611 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,617 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,623 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,628 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,634 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,639 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,644 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,650 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,655 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,661 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,666 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,672 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,677 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,682 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,687 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,692 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,698 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,703 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,709 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,715 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,722 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,728 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,734 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,740 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,745 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,751 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,757 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,763 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,768 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,774 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,780 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,786 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,807 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,814 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,820 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:37,982 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:37] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:38,019 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,116 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,122 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,128 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,135 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,141 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,146 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,154 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,160 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,166 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,173 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,179 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,185 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,191 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,197 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,202 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,208 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,213 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,219 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,225 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,230 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,236 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,241 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,247 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,252 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,257 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,262 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,267 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,273 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,278 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,283 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,289 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,294 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,299 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,304 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,438 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,445 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,451 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,500 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:38,748 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:38] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:38,919 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:38] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:40,011 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:40] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:40,020 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:40] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:41,609 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:41,729 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:41] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:42,084 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:42] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:42,639 [INFO] [INFO] network — 23.36.15.149: Identified traffic destination: msedge.b.tlu.dl.delivery.mp.microsoft.com
+2026-09-13 17:06:42,645 [INFO] [WARNING] security — 192.168.1.100: Unusual ports seen: [8925]
+2026-09-13 17:06:42,651 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 159 retransmissions | Packets: 167 TCP / 170 Total | Hosts: 1 | Unusual Ports: [8925]
+2026-09-13 17:06:42,652 [INFO] Capture cycle (5s): 159 retransmissions | Packets: 167 TCP / 170 Total | Hosts: 1 | Unusual Ports: [8925]
+2026-09-13 17:06:43,077 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:43] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:43,866 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:43] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:44,028 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:44] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:44,729 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:44] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:45,490 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:45] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:46,455 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:46] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:47,729 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:47] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:47,805 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:47] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:48,463 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 0 retransmissions | Packets: 0 TCP / 3 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:06:48,463 [INFO] Capture cycle (5s): 0 retransmissions | Packets: 0 TCP / 3 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:06:49,409 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:49,983 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:50,148 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:50] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:50,228 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:50] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:50,284 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:50] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:50,325 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:50,635 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:50,709 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:50,758 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:50] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:51,117 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:51,124 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:06:51,341 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:51] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:52,294 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:52] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:52,350 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:52] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:53,756 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:53] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:54,040 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:54] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:54,492 [INFO] [INFO] network — 35.186.224.24: Identified traffic destination: spclient.wg.spotify.com
+2026-09-13 17:06:54,503 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 7 retransmissions | Packets: 30 TCP / 36 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:06:54,503 [INFO] Capture cycle (5s): 7 retransmissions | Packets: 30 TCP / 36 Total | Hosts: 1 | Unusual Ports: none
+2026-09-13 17:06:54,564 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:54] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:55,405 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:55] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:55,930 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:55] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:56,735 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:56] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:06:57,377 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:57] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:58,323 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:58] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:59,195 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:59] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:59,372 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:59] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:06:59,730 [INFO] 127.0.0.1 - - [13/Sep/2026 17:06:59] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:07:00,994 [INFO] [INFO] network — 192.168.1.100: Capture cycle (5s): 0 retransmissions | Packets: 1 TCP / 5 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:07:00,995 [INFO] Capture cycle (5s): 0 retransmissions | Packets: 1 TCP / 5 Total | Hosts: 0 | Unusual Ports: none
+2026-09-13 17:07:01,158 [INFO] 127.0.0.1 - - [13/Sep/2026 17:07:01] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:07:02,741 [INFO] 127.0.0.1 - - [13/Sep/2026 17:07:02] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:07:02,809 [INFO] 127.0.0.1 - - [13/Sep/2026 17:07:02] "GET /api/metrics HTTP/1.1" 200 -
+2026-09-13 17:07:03,166 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:07:03,817 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:07:03,883 [INFO] 127.0.0.1 - - [13/Sep/2026 17:07:03] "GET /data HTTP/1.1" 200 -
+2026-09-13 17:07:04,132 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:07:04,476 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:07:04,736 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)
+2026-09-13 17:07:05,950 [INFO] [WARNING] network — 192.168.1.100: TCP retransmission detected (custom sniffer)

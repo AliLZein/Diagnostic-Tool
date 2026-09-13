@@ -15,6 +15,7 @@ if sys.platform == "win32" and not is_admin():
     sys.exit()
 
 import os
+import re
 import subprocess
 import logging
 import time
@@ -100,6 +101,24 @@ def get_process_for_port(port):
         pass
     return "System/Idle", "N/A"
 
+def scan_os_listening_ports():
+    """OS-Level Inspection: Queries the Windows network stack via netstat 
+    to instantly discover ALL active listening ports (1-65535) with zero lag."""
+    open_ports = set()
+    try:
+        output = subprocess.check_output("netstat -ano", shell=True, text=True)
+        for line in output.strip().split("\n"):
+            parts = line.strip().split()
+            if len(parts) >= 4 and "LISTENING" in parts:
+                local_address = parts[1]
+                if ":" in local_address:
+                    port_str = local_address.rsplit(":", 1)[1]
+                    if port_str.isdigit():
+                        open_ports.add(int(port_str))
+    except Exception:
+        pass
+    return open_ports
+
 def get_local_ip():
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     try:
@@ -136,11 +155,11 @@ PAGE_TEMPLATE = """
   #controls { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; font-size: 13px; color: #cccccc; flex-wrap: wrap; }
   #controls input, #controls select { background-color: #1a1a1a; border: 1px solid #444444; color: #ffffff; padding: 6px 8px; border-radius: 4px; }
   
-  /* Styled button matching Save button design */
   .btn-custom { background-color: #ff4d4d; color: #000000; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-weight: 600; text-decoration: none; display: inline-block; text-align: center; }
   
   .btn-purge { background-color: #333333 !important; color: #ff4d4d !important; border: 1px solid #ff4d4d !important; }
   .btn-remediate { background-color: #ff3333 !important; color: #ffffff !important; padding: 3px 8px !important; font-size: 11px !important; }
+  .btn-dismiss { background-color: #444444 !important; color: #ffffff !important; padding: 3px 8px !important; font-size: 11px !important; margin-left: 4px; border: none; border-radius: 4px; cursor: pointer; }
 
   .dashboard-grid { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px; }
   .stats-card { flex: 1; min-width: 250px; background: #1a1a1a; padding: 15px; border-radius: 6px; border: 1px solid #333333; display: flex; flex-direction: column; justify-content: center; }
@@ -159,7 +178,7 @@ PAGE_TEMPLATE = """
   <div id="verdict-banner">Loading verdict...</div>
   
   <div id="correlation-box">
-    <strong>🧠 Cross-System Timeline Correlation:</strong> <span id="correlation-text">Analyzing event correlation narratives...</span>
+    <strong>Cross-System Timeline Correlation:</strong> <span id="correlation-text">Analyzing event correlation narratives...</span>
   </div>
 
   <div id="controls">
@@ -213,10 +232,9 @@ PAGE_TEMPLATE = """
     <tbody id="findings-body"></tbody>
   </table>
 
-  <!-- Remediation Safety Modal with Command Preview -->
   <div id="remediationModal" class="modal">
     <div class="modal-content">
-      <h3 style="color:#ff4d4d; margin-top:0;">⚠️ Confirm Remediation Action</h3>
+      <h3 style="color:#ff4d4d; margin-top:0;">Confirm Remediation Action</h3>
       <p id="modal-desc" style="font-size:13px; color:#ccc;"></p>
       <p style="font-size:12px; color:#ff9999; margin-bottom:4px;">Commands to be executed:</p>
       <div id="modal-cmd-preview" class="command-box"></div>
@@ -229,9 +247,10 @@ PAGE_TEMPLATE = """
 
   <script>
     let allFindings = [];
+    let dismissedIds = new Set();
 
     function parseTimeToMinutes(str) {
-      const m = str.match(/^(\d{1,2}):(\d{2})(?::\d{2})?\s*(am|pm)?$/i);
+      const m = str.match(/^(\\d{1,2}):(\\d{2})(?::\\d{2})?\\s*(am|pm)?$/i);
       if (!m) return null;
       let h = parseInt(m[1], 10);
       const min = parseInt(m[2], 10);
@@ -274,11 +293,12 @@ PAGE_TEMPLATE = """
         }
       }
 
+      let matchedItems = [];
       allFindings.forEach(f => {
         const localDate = new Date(f.timestamp);
         const itemMinutes = localDate.getHours() * 60 + localDate.getMinutes();
         const isAnomaly = f.severity === "WARNING" || f.severity === "ERROR" || f.severity === "CRITICAL" || f.is_anomaly;
-        const haystack = `${f.id} ${localDate.toLocaleString()} ${f.category} ${f.severity} ${f.source} ${f.process_info || ''} ${f.message}`.toLowerCase();
+        const haystack = `${localDate.toLocaleString()} ${f.category} ${f.severity} ${f.source} ${f.process_info || ''} ${f.message}`.toLowerCase();
 
         if (windowStart !== null && windowEnd !== null) {
           if (hasAdd) {
@@ -294,11 +314,35 @@ PAGE_TEMPLATE = """
           if (!haystack.includes(term)) return;
         }
 
+        matchedItems.push({ f, localDate, isAnomaly });
+      });
+
+      // Sorting: 
+      // 1. Undismissed anomalies pinned to absolute top (newest first among them)
+      // 2. All other items (normal entries + dismissed anomalies) ordered newest to oldest (highest ID / latest time at top)
+      matchedItems.sort((a, b) => {
+        const aIsPinned = a.isAnomaly && !dismissedIds.has(a.f.id);
+        const bIsPinned = b.isAnomaly && !dismissedIds.has(b.f.id);
+
+        if (aIsPinned && !bIsPinned) return -1;
+        if (!aIsPinned && bIsPinned) return 1;
+
+        // If both share the same pin state, sort descending by database ID (newest entry at the top)
+        return b.f.id - a.f.id;
+      });
+
+      matchedItems.forEach(({ f, localDate, isAnomaly }) => {
         const row = document.createElement("tr");
         if (isAnomaly) row.className = "anomaly-row";
         
         const procDisplay = (f.process_info && f.process_info !== "N/A") ? `${f.source} -> <strong>${f.process_info}</strong> (PID: ${f.pid})` : f.source;
         
+        let actionButtons = `<button class="btn-action btn-remediate" onclick="openRemediationModal('${f.port || ''}', '${f.pid || 'N/A'}')">Mitigate</button>`;
+        
+        if (isAnomaly && !dismissedIds.has(f.id)) {
+          actionButtons += `<button class="btn-dismiss" onclick="dismissAlert(${f.id})">Dismiss</button>`;
+        }
+
         row.innerHTML = `
           <td>${f.id}</td>
           <td>${localDate.toLocaleTimeString()}</td>
@@ -306,29 +350,38 @@ PAGE_TEMPLATE = """
           <td>${f.severity}</td>
           <td>${procDisplay}</td>
           <td>${f.message}</td>
-          <td><button class="btn-action btn-remediate" onclick="openRemediationModal('${f.source}', '${f.pid || 'N/A'}')">Mitigate</button></td>
+          <td>${actionButtons}</td>
         `;
         tbody.appendChild(row);
       });
     }
 
-    function openRemediationModal(portOrSource, pid) {
+    function dismissAlert(id) {
+      dismissedIds.add(id);
+      renderFindings();
+    }
+
+    function openRemediationModal(port, pid) {
       const modal = document.getElementById("remediationModal");
       const desc = document.getElementById("modal-desc");
       const cmdPreview = document.getElementById("modal-cmd-preview");
       const btn = document.getElementById("modal-proceed-btn");
-      
-      desc.innerText = `Target: ${portOrSource} | PID: ${pid}\nAction: Terminate PID tree & apply firewall block rule.`;
-      
-      // Preview exact commands
+
+      if (!port) {
+        alert("No specific port associated with this finding -- nothing to mitigate.");
+        return;
+      }
+
+      desc.innerText = `Target port: ${port} | PID: ${pid}\nAction: Terminate PID tree & apply firewall block rule.`;
+
       let previewText = "";
       if (pid && pid !== "N/A") {
-        previewText += `taskkill /F /T /PID ${pid}\\n`;
+        previewText += `taskkill /F /T /PID ${pid}\n`;
       }
-      previewText += `netsh advfirewall firewall add rule name="Toolkit_Block" dir=in protocol=TCP localport=X action=block`;
+      previewText += `netsh advfirewall firewall add rule name="Toolkit_Block_${port}" dir=in protocol=TCP localport=${port} action=block`;
       cmdPreview.innerText = previewText;
 
-      btn.onclick = function() { executeMitigation(portOrSource, pid); };
+      btn.onclick = function() { executeMitigation(port, pid); };
       modal.style.display = "block";
     }
 
@@ -336,19 +389,19 @@ PAGE_TEMPLATE = """
       document.getElementById("remediationModal").style.display = "none";
     }
 
-    async function executeMitigation(target, pid) {
+    async function executeMitigation(port, pid) {
       closeModal();
       try {
         const res = await fetch("/api/remediate", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ target: target, pid: pid })
+          body: JSON.stringify({ port: port, pid: pid })
         });
         const data = await res.json();
         alert(data.message);
         refreshData();
       } catch (err) {
-        alert("Remediation failed — check logs.");
+        alert("Remediation failed -- check logs.");
       }
     }
 
@@ -359,7 +412,7 @@ PAGE_TEMPLATE = """
         renderFindings();
         document.getElementById("status").innerText = "Last updated: " + new Date().toLocaleTimeString();
       } catch (err) {
-        document.getElementById("status").innerText = "Connection lost — retrying...";
+        document.getElementById("status").innerText = "Connection lost -- retrying...";
       }
     }
 
@@ -458,7 +511,6 @@ PAGE_TEMPLATE = """
         const res = await fetch("/export.csv");
         const data = await res.json();
         
-        // Light green success state matching Save button design
         exportBtn.innerText = "✓";
         exportBtn.style.backgroundColor = "#28a745";
         exportBtn.style.color = "#ffffff";
@@ -497,6 +549,7 @@ PAGE_TEMPLATE = """
       
       document.getElementById("purge-value").value = "7";
       document.getElementById("purge-unit").value = "days";
+      dismissedIds.clear();
 
       refreshData();
       refreshMetrics();
@@ -528,9 +581,10 @@ def data():
         is_anomaly = f.severity in ("WARNING", "ERROR", "CRITICAL")
         if "retransmission" in f.message.lower() and retrans_count >= threshold:
             is_anomaly = True
-        
-        port_num = f.source.replace("Port ", "").strip() if "Port" in f.source else None
-        exe_name, pid = get_process_for_port(port_num) if port_num else ("System", "N/A")
+
+        port_match = re.search(r':\s*(\d{2,5})\s*$', f.message)
+        port_num = port_match.group(1) if port_match else None
+        exe_name, pid = get_process_for_port(port_num) if port_num else ("System/Idle", "N/A")
 
         enriched.append({
             "id": f.id,
@@ -541,7 +595,8 @@ def data():
             "message": f.message,
             "is_anomaly": is_anomaly,
             "process_info": exe_name,
-            "pid": pid
+            "pid": pid,
+            "port": port_num,
         })
     return jsonify(enriched)
 
@@ -578,16 +633,12 @@ def api_metrics():
 
 @app.route("/api/remediate", methods=["POST"])
 def api_remediate():
-    """Foolproof Remediation using taskkill tree termination (/T) and firewall rule insertion."""
+    """Foolproof Remediation using explicit port and PID parameters."""
     payload = request.get_json(silent=True) or {}
-    raw_target = str(payload.get("target", ""))
+    port_val = str(payload.get("port", "")).strip() or None
     pid = payload.get("pid", "N/A")
 
-    import re
-    port_match = re.search(r'(?:port\s*)?(\d+)', raw_target, re.IGNORECASE)
-    port_val = port_match.group(1) if port_match else None
-
-    if port_val:
+    if port_val and port_val.isdigit():
         port_int = int(port_val)
         for protected in PROTECTED_PORTS:
             if port_int == protected:
@@ -595,7 +646,6 @@ def api_remediate():
 
     actions_taken = []
     try:
-        # Force terminate process tree (/T kills child processes like python.exe server spawned from cmd/powershell)
         if pid != "N/A" and str(pid).isdigit():
             subprocess.run(f"taskkill /F /T /PID {pid}", shell=True, check=True)
             actions_taken.append(f"Terminated PID tree {pid}")
@@ -608,9 +658,41 @@ def api_remediate():
         if actions_taken:
             return jsonify({"status": "ok", "message": "Mitigation successful: " + " | ".join(actions_taken)})
         else:
-            return jsonify({"status": "error", "message": f"Could not determine valid port or PID from target: '{raw_target}'."}), 400
+            return jsonify({"status": "error", "message": "Could not determine a valid port or PID for this finding."}), 400
     except Exception as e:
         return jsonify({"status": "error", "message": f"Mitigation failed: {str(e)}"}), 500
+
+
+def reset_finding_ids(cursor):
+    """Renumber all remaining findings from 1 upward chronologically."""
+    cursor.execute("SELECT id FROM findings ORDER BY timestamp ASC, id ASC")
+    existing_ids = [row[0] for row in cursor.fetchall()]
+
+    if not existing_ids:
+        try:
+            cursor.execute("DELETE FROM sqlite_sequence WHERE name = 'findings'")
+        except sqlite3.OperationalError:
+            pass
+        return
+
+    # Temporarily move IDs to negative values so new sequential IDs cannot collide.
+    cursor.execute("UPDATE findings SET id = -id")
+
+    for new_id, old_id in enumerate(existing_ids, start=1):
+        cursor.execute(
+            "UPDATE findings SET id = ? WHERE id = ?",
+            (new_id, -old_id)
+        )
+
+    # Make the next AUTOINCREMENT value continue after the highest remaining ID.
+    try:
+        cursor.execute(
+            "UPDATE sqlite_sequence SET seq = ? WHERE name = 'findings'",
+            (len(existing_ids),)
+        )
+    except sqlite3.OperationalError:
+        pass
+
 
 @app.route("/api/purge", methods=["POST"])
 def api_purge():
@@ -649,6 +731,9 @@ def api_purge():
         if ids_to_delete:
             cursor.executemany("DELETE FROM findings WHERE id = ?", [(i,) for i in ids_to_delete])
             deleted_count = len(ids_to_delete)
+
+            # Reset the remaining IDs to 1, 2, 3, ... after every manual purge.
+            reset_finding_ids(cursor)
             conn.commit()
         conn.close()
 
@@ -695,11 +780,29 @@ def background_diagnostic_loop(interval_seconds=0.5):
     cycle_counter = 0
     while True:
         try:
-            from network_scanner.custom_scanner import scan_network
-            from network_scanner.scanner import compare_to_baseline
             from packet_analyzer.custom_sniffer import sniff_traffic
-            results = scan_network("127.0.0.1")
-            compare_to_baseline(results)
+            
+            active_ports = scan_os_listening_ports()
+            db_path = os.path.join(DATA_DIR, "findings.db")
+
+            for port in active_ports:
+                if port not in PROTECTED_PORTS and port != 5000:
+                    if os.path.exists(db_path):
+                        conn = sqlite3.connect(db_path)
+                        cursor = conn.cursor()
+                        cursor.execute(
+                            "SELECT id FROM findings WHERE source = ? AND timestamp >= datetime('now', '-30 seconds')",
+                            (f"Port {port}",)
+                        )
+                        existing = cursor.fetchone()
+                        if not existing:
+                            cursor.execute(
+                                "INSERT INTO findings (timestamp, category, severity, source, message) VALUES (?, ?, ?, ?, ?)",
+                                (datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "network", "WARNING", f"Port {port}", f"New open port detected: {port}")
+                            )
+                            conn.commit()
+                        conn.close()
+
             sniff_traffic(local_ip=local_ip, duration=5)
 
             cycle_counter += 1
@@ -731,6 +834,9 @@ def background_diagnostic_loop(interval_seconds=0.5):
                                     pass
                             if auto_del_ids:
                                 cur.executemany("DELETE FROM findings WHERE id = ?", [(i,) for i in auto_del_ids])
+
+                                # Reset the remaining IDs after automatic purging too.
+                                reset_finding_ids(cur)
                                 conn.commit()
                             conn.close()
                 except Exception:
