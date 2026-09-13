@@ -3,11 +3,11 @@ from sqlalchemy.orm import declarative_base, sessionmaker
 from datetime import datetime
 import os
 import sys
+
+
 if getattr(sys, "frozen", False):
-    # Running as a PyInstaller exe
     BASE_DIR = os.path.dirname(sys.executable)
 else:
-    # Running as a plain .py script — go up one level from storage/
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
  
 DATA_DIR = os.path.join(BASE_DIR, "data")
@@ -39,9 +39,6 @@ def log_finding(category, severity, source, message):
     session.add(finding)
     session.commit()
     session.close()
-    # Use logging, not print — print() crashes silently in a windowed
-    # PyInstaller build where sys.stdout is None (unless you've already
-    # patched stdout, as in your desktop_app.py — this is just extra safety).
     import logging
     logging.info(f"[{severity.upper()}] {category} — {source}: {message}")
  
