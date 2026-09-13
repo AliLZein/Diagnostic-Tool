@@ -5,6 +5,8 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from storage.db import log_finding, get_all_findings
 
+#! Just Added This Comment to commit 
+
 def parse_log(filepath):
     entries = []
     pattern = re.compile(r"^(\S+) (ERROR|WARNING|INFO): (.+)$")
