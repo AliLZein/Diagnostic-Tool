@@ -1,6 +1,5 @@
 # -*- mode: python ; coding: utf-8 -*-
 
-
 a = Analysis(
     ['desktop_app.py'],
     pathex=[],
@@ -43,3 +42,4 @@ coll = COLLECT(
     upx_exclude=[],
     name='desktop_app',
 )
+#! just to push
