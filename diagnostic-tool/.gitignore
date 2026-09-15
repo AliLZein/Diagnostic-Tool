@@ -1,0 +1,15 @@
+# Python / Bundling Outputs
+dist/
+build/
+*.spec
+
+# Virtual Environments & Caches
+venv/
+__pycache__/
+.pytest_cache/
+
+# Local Logs & Databases
+diagnostic_toolkit.log
+data/
+
+#
